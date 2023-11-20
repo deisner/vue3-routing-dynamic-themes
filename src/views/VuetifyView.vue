@@ -1,0 +1,1 @@
+<template>Vuetify view</template>

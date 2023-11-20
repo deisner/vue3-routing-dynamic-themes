@@ -1,0 +1,24 @@
+{
+  "name": "vite-js",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@vue/compat": "^3.3.8",
+    "bootstrap": "^4.6.2",
+    "bootstrap-vue": "^2.23.1",
+    "portal-vue": "^2.1.7",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.4.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vue/compiler-sfc": "^3.3.8",
+    "vite": "^5.0.0"
+  }
+}
