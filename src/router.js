@@ -1,3 +1,4 @@
+import { configureCompat } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router'
 import { useTheme } from './use-theme'
 const { theme } = useTheme()
@@ -31,6 +32,16 @@ const router = createRouter({
 
 router.beforeEach(to => {
   theme.value = to.meta.theme
+  configureCompat({
+    MODE: (component) => {
+      const v3Components = ['VTextField', 'VInput'];
+      // return component && component.name
+      console.log(component);
+      return to.meta.theme === 'bootstrap' ? 2 : 3
+    },
+    GLOBAL_EXTEND: true,
+    INSTANCE_LISTENERS: true
+  })
 })
 
 export default router

@@ -10,13 +10,6 @@ export default defineConfig({
   plugins: [
     vue({
       reactivityTransform: true,
-      template: {
-        compilerOptions: {
-          compatConfig: {
-            MODE: 2,
-          },
-        },
-      },
     }),
   ],
   resolve: {
