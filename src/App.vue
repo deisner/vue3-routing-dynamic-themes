@@ -17,9 +17,9 @@ setup()
     <!-- use the router-link component for navigation. -->
     <!-- specify the link by passing the `to` prop. -->
     <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
-    <router-link to="/">Go to Home</router-link>
-    <router-link to="/bootstrap">Go to BootstapVue</router-link>
-    <router-link to="/vuetify">Go to Vuetify</router-link>
+    <div><router-link to="/">Go to Home</router-link></div>
+    <div><router-link to="/bootstrap">Go to BootstapVue</router-link></div>
+    <div><router-link to="/vuetify">Go to Vuetify</router-link></div>
   </p>
   <router-view />
 </template>
